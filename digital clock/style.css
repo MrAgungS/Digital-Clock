@@ -1,0 +1,79 @@
+/* ====== Reset & Body ====== */
+body {
+    background: #474747;
+    font-family: "Poppins", "Times New Roman", Times, serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* ====== Container Utama ====== */
+.container {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 1000px;
+    box-shadow: 0 0 25px rgba(255, 255, 255, 0.1);
+    padding: 40px 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    backdrop-filter: blur(10px);
+}
+.container:hover {
+    box-shadow: 0 0 40px rgba(255, 255, 255, 0.2);
+    transform: scale(1.02);
+    transition: all 0.3s ease-in-out;
+}
+
+/* ====== Dot Bulat ====== */
+.dot {
+    height: 150px;
+    width: 150px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.dot:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.6);
+}
+
+/* ====== Dot Kotak ====== */
+.dot2 {
+    height: 150px;
+    width: 150px;
+    background-color: #ffffff;
+    border-radius: 12%;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.dot2:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.6);
+}
+
+/* ====== Bagian Teks (Jam & Tanggal) ====== */
+.text-box {
+    text-align: center;
+}
+
+.clock {
+    font-weight: 600;
+    letter-spacing: 4px;
+    color: #ffffff;
+    font-size: 2rem;
+    margin: 0;
+}
+
+.date {
+    font-weight: 500;
+    color: #ffffff;
+    margin-top: 8px;
+    font-size: 1rem;
+    opacity: 0.85;
+}
